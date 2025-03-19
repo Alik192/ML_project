@@ -68,6 +68,22 @@ def preprocess_image(image):
 
 
 st.set_page_config(page_title="Handwritten Digit Recognition", layout="wide")
+st.markdown(
+    """
+    <style>
+        /* Sidebar color */
+        section[data-testid="stSidebar"] {
+            background-color: #1E3A5F;  /* Change this for a different sidebar color */
+        }
+        
+        /* Main page background color */
+        .stApp {
+            background-color: #F0F2F6;  /* Change this for a different main page color */
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 st.title("Handwritten Digit Recognition ✍️")
 st.markdown("""
     Welcome to the Handwritten Digit Recognition app!  
